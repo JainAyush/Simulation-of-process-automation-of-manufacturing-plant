@@ -1,0 +1,648 @@
+// main process
+
+ayush@ubuntu:~/Desktop$ gcc main.c
+ayush@ubuntu:~/Desktop$ ./a.out
+
+my pid is 2151
+
+pid of first process is 2162 
+
+pid of second process is 2168 
+
+pid of third process is 2175 
+
+pid of fourth process is 2181 
+
+	 Menu 
+ 1 --> Change data of raw materials 
+ 2 --> Change temperature of of first machine 
+ 3 --> POWER fAILURE
+ 4 --> Exit
+1
+
+Enter data of raw materials
+
+enter value of iron(in kgs):800
+
+enter number of rearglass:4
+
+enter number of frontglass:4
+
+enter number of sideglass:16
+
+enter number of paint(no. of cans):80
+
+enter number of tyre:16
+
+enter number of engine:4
+
+enter number of ackit:4
+
+enter number of furniturekit:4
+
+	 Menu 
+ 1 --> Change data of raw materials 
+ 2 --> Change temperature of of first machine 
+ 3 --> POWER fAILURE
+ 4 --> Exit
+
+ process 1 stopped working 
+
+	 Menu 
+ 1 --> Change data of raw materials 
+ 2 --> Change temperature of of first machine 
+ 3 --> POWER fAILURE
+ 4 --> Exit
+
+ process 2 stopped working 
+
+	 Menu 
+ 1 --> Change data of raw materials 
+ 2 --> Change temperature of of first machine 
+ 3 --> POWER fAILURE
+ 4 --> Exit
+
+ process 3 stopped working 
+
+	 Menu 
+ 1 --> Change data of raw materials 
+ 2 --> Change temperature of of first machine 
+ 3 --> POWER fAILURE
+ 4 --> Exit
+
+ process 4 stopped working 
+
+	 Menu 
+ 1 --> Change data of raw materials 
+ 2 --> Change temperature of of first machine 
+ 3 --> POWER fAILURE
+ 4 --> Exit
+4
+ main process is exiting
+
+
+
+// p1 process
+
+
+ayush@ubuntu:~/Desktop$ gcc p1.c -lpthread
+ayush@ubuntu:~/Desktop$ ./a.out
+
+mypid is 2162 
+
+pid of main process is 2151 
+
+the body is created
+
+now sending the body for paint
+
+iron left 600
+
+the body is created
+
+now sending the body for paint
+
+iron left 400
+
+the body is created
+
+now sending the body for paint
+
+iron left 200
+
+the body is created
+
+now sending the body for paint
+
+iron left 0
+
+not enough iron
+0
+1 --> want to stop the process
+2 --> want to add raw material
+choose:1
+
+total iron body created: 4
+
+
+
+// p2 process
+
+
+ayush@ubuntu:~/Desktop$ gcc p2.c -lpthread
+ayush@ubuntu:~/Desktop$ ./a.out
+
+mypid is 2168 
+
+pid of main process is 2151 
+
+the body is painted
+
+Sending the painted body for mirror factory. 
+
+Cans of paint left: 60
+
+the body is painted
+
+Sending the painted body for mirror factory. 
+
+Cans of paint left: 40
+
+the body is painted
+
+Sending the painted body for mirror factory. 
+
+Cans of paint left: 20
+
+the body is painted
+
+Sending the painted body for mirror factory. 
+
+Cans of paint left: 0
+
+Not enough paint
+
+1 --> want to stop the process
+2 --> want to add raw material
+choose:1
+
+total painted body created: 4
+
+
+// p3 process
+
+
+ayush@ubuntu:~/Desktop$ gcc p3.c -lpthread
+ayush@ubuntu:~/Desktop$ ./a.out
+mypid is 2175 
+pid of main process is 2151 
+
+sending car for assembling
+
+number of rearglass left:3
+number of frontglass left:3
+number of sideglass left:12
+
+sending car for assembling
+
+number of rearglass left:2
+number of frontglass left:2
+number of sideglass left:8
+
+sending car for assembling
+
+number of rearglass left:1
+number of frontglass left:1
+number of sideglass left:4
+
+sending car for assembling
+
+number of rearglass left:0
+number of frontglass left:0
+number of sideglass left:0
+
+not enough rearglass
+
+not enough frontglass
+
+not enough sideglass
+
+1 --> want to stop the process
+2 --> want to add raw material
+choose:1
+
+total car for assembly created: 4
+
+
+// p4 process
+
+
+ayush@ubuntu:~/Desktop$ gcc p4.c -lpthread
+ayush@ubuntu:~/Desktop$ ./a.out
+mypid is 2181 
+pid of main process is 2151 
+
+Car ready to go
+
+number of tyre left:12
+number of engine left:3
+number of ackit left:3
+number of furnkit left:3
+
+Car ready to go
+
+number of tyre left:8
+number of engine left:2
+number of ackit left:2
+number of furnkit left:2
+
+Car ready to go
+
+number of tyre left:4
+number of engine left:1
+number of ackit left:1
+number of furnkit left:1
+
+Car ready to go
+
+number of tyre left:0
+number of engine left:0
+number of ackit left:0
+number of furnkit left:0
+
+not enough tyre
+
+no engine
+
+not enough ackit
+
+not enough furnkit
+
+1 --> want to stop the process
+2 --> want to add raw material
+choose:1
+
+total completed car created: 4
+
+
+/*******************************  when temperature of machine 1 goes above critical temp. *****************************************/
+
+
+// main process
+
+
+ayush@ubuntu:~/Desktop$ gcc main.c
+ayush@ubuntu:~/Desktop$ ./a.out
+
+my pid is 2722
+
+pid of first process is 2729 
+
+pid of second process is 2736 
+
+pid of third process is 2743 
+
+pid of fourth process is 2750 
+
+	 Menu 
+ 1 --> Change data of raw materials 
+ 2 --> Change temperature of of first machine 
+ 3 --> POWER fAILURE
+ 4 --> Exit
+1
+
+Enter data of raw materials
+
+enter value of iron(in kgs):800
+
+enter number of rearglass:4
+
+enter number of frontglass:4
+
+enter number of sideglass:16
+
+enter number of paint(no. of cans):80
+
+enter number of tyre:16
+
+enter number of engine:4
+
+enter number of ackit:4
+
+enter number of furniturekit:4
+
+	 Menu 
+ 1 --> Change data of raw materials 
+ 2 --> Change temperature of of first machine 
+ 3 --> POWER fAILURE
+ 4 --> Exit
+2
+
+enter the temp. of the machine:
+ temp=1600
+
+	 Menu 
+ 1 --> Change data of raw materials 
+ 2 --> Change temperature of of first machine 
+ 3 --> POWER fAILURE
+ 4 --> Exit
+
+hi
+
+	 Menu 
+ 1 --> Change data of raw materials 
+ 2 --> Change temperature of of first machine 
+ 3 --> POWER fAILURE
+ 4 --> Exit
+4
+
+main process exiting
+ayush@ubuntu:~/Desktop$ 
+
+
+
+// p1 process
+
+
+ayush@ubuntu:~/Desktop$ gcc p1.c -lpthread
+ayush@ubuntu:~/Desktop$ ./a.out
+
+mypid is 2729 
+
+pid of main process is 2722 
+
+the body is created
+
+now sending the body for paint
+
+iron left 600
+
+the body is created
+
+now sending the body for paint
+
+iron left 400
+
+the body is created
+
+now sending the body for paint
+
+iron left 200
+
+temperature of machine is critical
+
+exiting the process
+
+total iron body created: 3
+Killed
+
+
+// p2 process
+
+
+ayush@ubuntu:~/Desktop$ gcc p2.c -lpthread
+ayush@ubuntu:~/Desktop$ ./a.out
+
+mypid is 2736 
+
+pid of main process is 2722 
+
+the body is painted
+
+Sending the painted body for mirror factory. 
+
+Cans of paint left: 60
+
+the body is painted
+
+Sending the painted body for mirror factory. 
+
+Cans of paint left: 40
+
+the body is painted
+
+Sending the painted body for mirror factory. 
+
+Cans of paint left: 20
+
+No Body available
+want to exit enter the value 2
+2
+
+total painted body created: 3
+
+// p3 process
+
+
+ayush@ubuntu:~/Desktop$ gcc p3.c -lpthread
+ayush@ubuntu:~/Desktop$ ./a.out
+mypid is 2743 
+pid of main process is 2722 
+
+sending car for assembling
+
+number of rearglass left:3
+number of frontglass left:3
+number of sideglass left:12
+
+sending car for assembling
+
+number of rearglass left:2
+number of frontglass left:2
+number of sideglass left:8
+
+sending car for assembling
+
+number of rearglass left:1
+number of frontglass left:1
+number of sideglass left:4
+
+No Painted Body available
+want to exit enter the value 2
+2
+
+total car for assembly created: 3
+// p4 process
+
+
+ayush@ubuntu:~/Desktop$ gcc p4.c -lpthread
+ayush@ubuntu:~/Desktop$ ./a.out
+mypid is 2750 
+pid of main process is 2722 
+
+Car ready to go
+
+number of tyre left:12
+number of engine left:3
+number of ackit left:3
+number of furnkit left:3
+
+Car ready to go
+
+number of tyre left:8
+number of engine left:2
+number of ackit left:2
+number of furnkit left:2
+
+Car ready to go
+
+number of tyre left:4
+number of engine left:1
+number of ackit left:1
+number of furnkit left:1
+
+No Body available for assembling
+want to exit enter the value 2
+2
+
+total completed car created: 3
+
+
+/******************************************POWER FAILURE****************************************/
+
+
+// main process
+
+
+ayush@ubuntu:~/Desktop$ gcc main.c
+ayush@ubuntu:~/Desktop$ ./a.out
+
+my pid is 2722
+
+pid of first process is 2729 
+
+pid of second process is 2736 
+
+pid of third process is 2743 
+
+pid of fourth process is 2750 
+
+	 Menu 
+ 1 --> Change data of raw materials 
+ 2 --> Change temperature of of first machine 
+ 3 --> POWER fAILURE
+ 4 --> Exit
+1
+
+Enter data of raw materials
+
+enter value of iron(in kgs):800
+
+enter number of rearglass:4
+
+enter number of frontglass:4
+
+enter number of sideglass:16
+
+enter number of paint(no. of cans):80
+
+enter number of tyre:16
+
+enter number of engine:4
+
+enter number of ackit:4
+
+enter number of furniturekit:4
+
+
+
+	 Menu 
+ 1 --> Change data of raw materials 
+ 2 --> Change temperature of of first machine 
+ 3 --> POWER fAILURE
+ 4 --> Exit
+3
+
+power failure!!!!power failure!!!!power failure!!!!
+
+
+// p1 process
+
+
+ayush@ubuntu:~/Desktop$ gcc p1.c -lpthread
+ayush@ubuntu:~/Desktop$ ./a.out
+
+mypid is 2965 
+
+pid of main process is 2945 
+
+the body is created
+
+now sending the body for paint
+
+iron left 600
+Killed
+ayush@ubuntu:~/Desktop$ gcc p1.c -lpthread
+ayush@ubuntu:~/Desktop$ ./a.out
+
+mypid is 3022 
+
+pid of main process is 3007 
+
+the body is created
+
+now sending the body for paint
+
+iron left 600
+
+the body is created
+
+now sending the body for paint
+
+iron left 400
+
+the body is created
+
+now sending the body for paint
+
+iron left 200
+Killed
+
+
+// p2 process
+
+ayush@ubuntu:~/Desktop$ gcc p2.c -lpthread
+ayush@ubuntu:~/Desktop$ ./a.out
+
+mypid is 3029 
+
+pid of main process is 3007 
+
+the body is painted
+
+Sending the painted body for mirror factory. 
+
+Cans of paint left: 60
+
+the body is painted
+
+Sending the painted body for mirror factory. 
+
+Cans of paint left: 40
+Killed
+
+
+// p3 process
+
+ayush@ubuntu:~/Desktop$ gcc p3.c -lpthread
+ayush@ubuntu:~/Desktop$ ./a.out
+mypid is 3036 
+pid of main process is 3007 
+
+sending car for assembling
+
+number of rearglass left:3
+number of frontglass left:3
+number of sideglass left:12
+
+sending car for assembling
+
+number of rearglass left:2
+number of frontglass left:2
+number of sideglass left:8
+Killed
+
+
+// p4 process
+
+
+ayush@ubuntu:~/Desktop$ gcc p4.c -lpthread
+ayush@ubuntu:~/Desktop$ ./a.out
+mypid is 3043 
+pid of main process is 3007 
+
+Car ready to go
+
+number of tyre left:12
+number of engine left:3
+number of ackit left:3
+number of furnkit left:3
+
+Car ready to go
+
+number of tyre left:8
+number of engine left:2
+number of ackit left:2
+number of furnkit left:2
+Killed
+
